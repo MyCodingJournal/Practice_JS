@@ -1,0 +1,163 @@
+//25/01/2022
+
+// const tableLamp = {
+//   colour: "black",
+//   type: "led",
+//   total: 1,
+//   mountType: "clip on desk",
+//   switchType: {
+//     one: "white",
+//     two2: "midYellow",
+//     3: "warmLight",
+//   },
+// };
+
+// console.log ("The tableLamp object:", tableLamp);
+
+// console.log ("The tableLamp colour:", tableLamp.colour);
+
+// console.log ("The tableLamp switchType one:", tableLamp.switchType.one);
+
+// console.log ("The tableLamp switchType two2:", tableLamp.switchType["two2"]);
+
+// console.log ("The tableLamp switchType 3:", tableLamp.switchType["3"]);
+// [] notation can be used to access odd name value pair property
+// . notation wouldn't work
+//console.log ("The tableLamp switchType three1:", tableLamp.switchType.1);
+
+
+//26/01/2022
+
+// const myLaptop = {
+//   colour: 'black',
+//   make: 'hp',
+//   processor: 'intel core i5',
+//   usbSlots: 3,
+//   hdmi: 1,
+//   audioJack: 1,
+//   powerType: { 
+//     onOff: 'true', 
+//   },
+// };
+
+// console.log ("This object myLaptop:", myLaptop);
+// console.log ("The make of object myLaptop:", myLaptop.make);
+// console.log ("The processor of object myLaptop:", myLaptop.processor);
+// console.log ("The powerType:", myLaptop.powerType.onOff);
+// console.log ("The audioJack of object myLaptop:", myLaptop["audioJack"]);
+
+// const pencilCase = {
+//   colour: "black",
+//   brand: "a brand called ed",
+//   compartments: {
+//     number: 3,
+//     type: {
+//       main: "1 zipper",
+//       pockets: {
+//         front: "velcro & zip",
+//         back: "velcro"
+//       },
+//     },
+//   },
+// };
+
+// console.log (pencilCase);
+// console.log ("This object pencilCase:", pencilCase);
+// console.log ("This object pencilCase compartments:", pencilCase.compartments);
+// console.log ("This object pencilCase compartments:", pencilCase.compartments.number);
+// console.log ("This object pencilCase compartments number:", pencilCase.compartments.type);
+// console.log ("This object pencilCase compartments pockets:", pencilCase.compartments.type.pockets);
+// console.log ("This object pencilCase compartments pockets front:", pencilCase.compartments.type.pockets["front"]);
+
+// const tablet = {
+//   brand: "lenovo",
+//   colour: "blue",
+//   ram: "2gb",
+//   installedApps: {
+//     email: "google",
+//     browser: "firefox",
+//     downloads: "app store",
+//     clock: "true",
+//     alarm: "true",
+//   }
+// };
+
+// console.log ("This object tablet:", tablet);
+// console.log ("This object tablet installed apps:", tablet.installedApps);
+// console.log ("This object tablet installed apps email:", tablet.installedApps.email);
+// console.log ("This object tablet installed apps email:", tablet.installedApps["alarm"]);
+
+
+// 27/01/2022
+
+// const lodging = {
+//   type: "unit",
+//   material: "bricks",
+//   bedrooms: 3,
+//   carSpace: 2,
+//   bathroom: 1,
+//   outDoor: "backyard",
+//   levels: "2 stories",
+//   doors: {
+//     front: 1,
+//     back: 2,
+//   },
+//   windows: {
+//     front: 2,
+//     back: 3,
+//   },
+// };
+
+// console.log ("This object lodging:", lodging);
+// console.log ("This object lodging bedrooms:", lodging.bedrooms);
+// console.log ("This object lodging doors:", lodging.doors);
+// console.log ("This object lodging windows:", lodging.windows);
+// console.log ("This object lodging back doors:", lodging.doors.back);
+// console.log ("This object lodging windows:", lodging.windows);
+// console.log ("This object lodging front windows :", lodging.windows.front);
+
+// const familyCar = {
+//   make: "honda",
+//   model: "hrv 2022",
+//   colour: "black",
+//   type: "suv",
+//   builtIN: {
+//     gps: "true",
+//     audio: "true",
+//     airCon: "true",
+//   },
+// };
+
+// console.log ("This object familyCar:", familyCar);
+// console.log ("This object colour:", familyCar.colour);
+// console.log ("This object model:", familyCar["model"]);
+
+// 28/01/2022
+
+const backpack = {
+  name: "cool every backpack",
+  colour: "black",
+  volume: 30,
+  pocketNum: 15,
+  strapLength: {
+    left: 26,
+    right: 26,
+  },
+  lidOpen: false,
+  toggleLid: function (lidStatus) { 
+    this.lidOpen = lidStatus;
+  },
+  newStrapLength: function ( lengthLeft, lengthRight) {
+    this.strapLength.left = lengthLeft;
+    this.strapLength.right = lengthRight;
+  },
+};
+
+console.log ("The backpack object:", backpack);
+backpack.toggleLid(true);
+console.log ("The backpack object:", backpack);
+
+console.log ("The straplenght left before:", backpack.strapLength.left);
+backpack.newStrapLength(30,30);
+console.log ("The straplenght left after:", backpack.strapLength.left);
+console.log ("The straplenght right after:", backpack.strapLength.right);
