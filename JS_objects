@@ -183,3 +183,20 @@ console.log ("The object lapTop:", lapTop);
 console.log ("The object lapTop switch on:", lapTop.switchOn);
 lapTop.powerOn (false);
 console.log ("The object lapTop switch on:", lapTop.switchOn);
+
+// 30/01/2022
+
+const ricecooker = {
+  brand: "samsung",
+  colour: "black",
+  capacity: "2 litres",
+  switchOn: true,
+  power: function (onStatus) {
+    this.switchOn = onStatus;
+  },
+};
+
+console.log ("The object ricecooker:", ricecooker);
+console.log ("The object ricecooker power on:", ricecooker.switchOn);
+ricecooker.power (false);
+console.log ("The object ricecooker power on:", ricecooker.switchOn);
