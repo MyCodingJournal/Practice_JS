@@ -194,9 +194,17 @@ const ricecooker = {
   power: function (onStatus) {
     this.switchOn = onStatus;
   },
+   timer: 30,
+   newTimer: function (newTime) {
+     this.timer = newTime;
+ },
 };
 
 console.log ("The object ricecooker:", ricecooker);
 console.log ("The object ricecooker power on:", ricecooker.switchOn);
 ricecooker.power (false);
 console.log ("The object ricecooker power on:", ricecooker.switchOn);
+
+console.log ("The obect ricecooker timer:", ricecooker.timer);
+ricecooker.newTimer (40);
+console.log ("The object ricecooker timer:", ricecooker.timer);
