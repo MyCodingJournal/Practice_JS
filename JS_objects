@@ -162,3 +162,24 @@ console.log ("The straplenght left before:", backpack.strapLength.left);
 backpack.newStrapLength(30,30);
 console.log ("The straplenght left after:", backpack.strapLength.left);
 console.log ("The straplenght right after:", backpack.strapLength.right);
+
+// 29/01/2022
+
+const lapTop = {
+  brand: "hp",
+  colour: "black",
+  weight: "1.8kg",
+  processor: "intel core i5",
+  usbSlot: 3,
+  hdmi: 1,
+  powerport: 1,
+  switchOn: true,
+  powerOn: function (powerStatus) {
+    this.switchOn = powerStatus;
+  },
+};
+
+console.log ("The object lapTop:", lapTop);
+console.log ("The object lapTop switch on:", lapTop.switchOn);
+lapTop.powerOn (false);
+console.log ("The object lapTop switch on:", lapTop.switchOn);
