@@ -226,3 +226,18 @@ console.log ("The object digitalclock:", digitalclock.powerOn);
 digitalclock.toggleSwitch (false);
 console.log ("The object digitalclock:", digitalclock.powerOn);
 
+
+const keyboard = {
+  brand: "logitech",
+  color: "dark grey",
+  capacity: "70 %",
+  wireless: true,
+  onOff: function (onStatus) {
+    this.wireless = onStatus;
+  },
+};
+
+console.log ("The object keyboard:", keyboard);
+console.log ("The object wireless:", keyboard.wireless);
+keyboard.onOff (false);// call function
+console.log ("The object wireless:", keyboard.wireless);
