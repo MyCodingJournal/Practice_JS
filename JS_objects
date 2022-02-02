@@ -251,7 +251,6 @@ console.log ("The object wireless:", keyboard.wireless);
 
 //2/02/2022
 
-
 const backpack = {
   name: "Everyday Backpack",
   volume: 30,
@@ -285,5 +284,32 @@ backpack.newBagColor ("brown");
 backpack.newPocketNum (30);
 backpack.newStrapLength (36,36);
 console.log ("The object backpack:", backpack);
+
+
+
+///////////////////////////////////////////////////////////////////Object_blueprints (classes)
+//2/02/2022
+
+const laptop = class {
+  constructor (
+    brand,
+    color,
+    weight,
+    usbslot,
+    hdmi,
+    powerport,
+    switchOn,
+  ) {
+    this.brand = brand;
+    this.color = color;
+    this.weight = weight;
+    this.usbslot = usbslot;
+    this.hdmi = hdmi;
+    this.powerport = powerport;
+    this.switchOn = switchOn;
+  }
+}
+
+
 
 
