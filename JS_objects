@@ -232,9 +232,6 @@ digitalclock.toggleSwitch (false);
 console.log ("The object digitalclock:", digitalclock.powerOn);
 
 
-
-//2/02/2022
-
 const keyboard = {
   brand: "logitech",
   color: "dark grey",
@@ -249,6 +246,11 @@ console.log ("The object keyboard:", keyboard);
 console.log ("The object wireless:", keyboard.wireless);
 keyboard.onOff (false);// call function
 console.log ("The object wireless:", keyboard.wireless);
+
+
+
+//2/02/2022
+
 
 const backpack = {
   name: "Everyday Backpack",
