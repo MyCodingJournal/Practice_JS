@@ -1,3 +1,4 @@
+//////////////////////////////////////////////////////////////////////////Objects///////////////////////////////////////////////////////////
 //25/01/2022
 
 // const tableLamp = {
@@ -132,7 +133,9 @@
 // console.log ("This object colour:", familyCar.colour);
 // console.log ("This object model:", familyCar["model"]);
 
-// Object_Methods
+
+
+///////////////////////////////////////////////////////////////// Object_Methods///////////////////////////////////////////////////////
 // 28/01/2022
 
 const backpack = {
@@ -209,6 +212,8 @@ console.log ("The obect ricecooker timer:", ricecooker.timer);
 ricecooker.newTimer (40);
 console.log ("The object ricecooker timer:", ricecooker.timer);
 
+
+
 // 1/02/2022
 
 const digitalclock = {
@@ -227,6 +232,9 @@ digitalclock.toggleSwitch (false);
 console.log ("The object digitalclock:", digitalclock.powerOn);
 
 
+
+//2/02/2022
+
 const keyboard = {
   brand: "logitech",
   color: "dark grey",
@@ -241,3 +249,39 @@ console.log ("The object keyboard:", keyboard);
 console.log ("The object wireless:", keyboard.wireless);
 keyboard.onOff (false);// call function
 console.log ("The object wireless:", keyboard.wireless);
+
+const backpack = {
+  name: "Everyday Backpack",
+  volume: 30,
+  color: "grey",
+  pocketNum: 15,
+  strapLength: {
+    left: 26,
+    right: 26,
+  },
+  toggleLid: function (lidStatus) {
+    this.lidOpen = lidStatus;
+  },
+  newStrapLength: function (lengthLeft, lengthRight) {
+    this.strapLength.left = lengthLeft;
+    this.strapLength.right = lengthRight;
+  },
+  newPocketNum: function (numPockets) {
+    this.pocketNum = numPockets;
+  },
+  newBagColor: function (newBagColor) {
+    this.color = newBagColor;
+  },
+  newVolume: function (newVolume) {
+    this.volume = newVolume;
+  },
+};
+
+console.log ("The object backpack:", backpack);
+backpack.newVolume (100);
+backpack.newBagColor ("brown");
+backpack.newPocketNum (30);
+backpack.newStrapLength (36,36);
+console.log ("The object backpack:", backpack);
+
+
